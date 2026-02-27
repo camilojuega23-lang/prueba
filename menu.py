@@ -1,4 +1,6 @@
 import os
+from saludo import saludo
+from despedida import despedida
 
 def limpiarPantalla():
     os.system("cls")
@@ -14,11 +16,11 @@ def menu():
         match opcion:
             case 1:
                 limpiarPantalla()
-                print('hola')
+                saludo()
                 print('a')
             case 2:
                 limpiarPantalla()
-                print('adios')
+                despedida()
                 print('a')
             case 3:
                 limpiarPantalla()
@@ -28,4 +30,5 @@ def menu():
                 limpiarPantalla()
                 print('accion no valida')
 
-menu()
+if __name__ == "__main__":
+    menu()
