@@ -1,6 +1,7 @@
 import os
 from saludo import saludo
 from despedida import despedida
+from trabajo import trabajo
 
 def limpiarPantalla():
     os.system("cls")
@@ -9,7 +10,8 @@ def menu():
     while True:
         print('1.saludar')
         print('2.despedirse')
-        print('3.salir')
+        print('3.trabajar')
+        print('4.salir')
 
         opcion = int(input("ingrese la opcion"))
 
@@ -24,7 +26,10 @@ def menu():
                 print('a')
             case 3:
                 limpiarPantalla()
-                print('salida')
+                trabajo()
+            case 4:
+                limpiarPantalla()
+                print('saliendo...')
                 break
             case _:
                 limpiarPantalla()
