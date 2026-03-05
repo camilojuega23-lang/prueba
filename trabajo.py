@@ -1,0 +1,2 @@
+def trabajo():
+    print("Trabajando...")
